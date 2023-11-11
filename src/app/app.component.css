@@ -1,0 +1,71 @@
+.root-comp {
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    flex-direction: column;
+}
+
+.book-seat-but:hover {
+    background-color: rgb(201, 195, 195);
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+}
+
+.seat-book-inp {
+    display: block;
+}
+
+.square {
+    width: 10px;
+    height: 20px;
+    display: inline-block;
+    background-color: #fff;
+}
+
+.row-wrapper {
+    padding: 10px;
+}
+
+.booked {
+    background-color: green;
+}
+
+.available {
+    background-color: rgb(201, 195, 195);
+}
+
+.info-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+    text-align: left;
+    justify-content: flex-start;
+}
+
+.available-info, .book-info {
+    display: flex;
+    align-items: center;
+}
+
+.color-box {
+    width: 15px;
+    height: 15px;
+    border: 1px solid grey;
+}
+
+.green {
+    background-color: green;
+}
+
+.grey {
+    background-color: rgb(201, 195, 195);
+}
+
+.info-text {
+    padding-left: 7px;
+}
