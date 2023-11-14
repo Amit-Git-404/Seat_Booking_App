@@ -1,0 +1,28 @@
+<h2 class="header">Seat Booking System</h2>
+<div class="root-comp">
+  <div class="seat-book-inp">
+    <label for="numSeats">Number of Seats to Book:</label>
+    <input type="number" [(ngModel)]="numSeats" id="numSeats" min="1" max="7">
+    <button class="book-seat-but" (click)="bookSeats()">Book Seats</button>
+  </div>
+
+  <div class="coach">
+    <div class="row row-wrapper" *ngFor="let row of coachLayout">
+      <div class="seat square" *ngFor="let seat of row; let i = index"
+        [ngClass]="{'available': seat.available, 'booked': !seat.available}">{{row.length == 3 && i == 2 ? 'X' : i + 1}}
+      </div>
+    </div>
+  </div>
+</div>
+<div class="info-section">
+  <div>
+    <div class="available-info">
+      <span class="color-box grey"></span>
+      <span class="info-text">Available</span>
+    </div>
+    <div class="book-info">
+      <span class="color-box green"></span>
+      <span class="info-text">Booked</span>
+    </div>
+  </div>
+</div>
